@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sriram - Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.glass {
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+}
+.neon-text {
+text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+0 0 20px rgba(255, 255, 255, 0.8),
+0 0 30px rgba(182, 36, 255, 0.8);
+}
+.typing-cursor {
+animation: blink 1s infinite;
+}
+@keyframes blink {
+0%, 100% { opacity: 1; }
+50% { opacity: 0; }
+}
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#B624FF',
+secondary: '#00FFFF'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="min-h-screen text-white overflow-hidden" style="background-image: url('https://static.readdy.ai/image/188f311e24fc2226deb6a17aad7a6c69/050cb06a0a9c071aa27dbdf4771b3872.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+<div class="container mx-auto px-4 h-screen flex flex-col">
+<nav class="glass rounded-lg mt-4 p-4">
+<ul class="flex justify-center space-x-8 text-xl">
+<li>
+<button onclick="showSection('home')" class="hover:text-primary transition-colors duration-300 cursor-pointer">Home</button>
+</li>
+<li>
+<button onclick="showSection('about')" class="hover:text-primary transition-colors duration-300 cursor-pointer">About</button>
+</li>
+<li>
+<button onclick="showSection('skills')" class="hover:text-primary transition-colors duration-300 cursor-pointer">Skills</button>
+</li>
+<li>
+<button onclick="showSection('contact')" class="hover:text-primary transition-colors duration-300 cursor-pointer">Contact</button>
+</li>
+</ul>
+</nav>
+<main class="flex-grow flex items-center justify-between px-20">
+<div id="home" class="w-1/2">
+<h1 class="text-6xl font-bold mb-4 neon-text text-left">SRIRAM</h1>
+<div class="text-2xl mb-8 text-left">
+<span id="typed-text"></span>
+<span class="typing-cursor">|</span>
+</div>
+<p class="text-lg glass p-6 rounded-lg text-left">
+Passionate web developer with a fresh perspective and eagerness to learn.
+Looking for opportunities to contribute and grow in the field of web development.
+</p>
+<div class="flex gap-4 mt-8">
+<button class="bg-primary hover:bg-opacity-80 px-8 py-3 rounded-button">
+Hire Me
+</button>
+<button class="glass hover:bg-white hover:bg-opacity-10 px-8 py-3 rounded-button">
+Download CV
+</button>
+</div>
+</div>
+<div class="w-1/2 flex justify-center">
+<div class="w-[500px] h-[500px] rounded-full bg-primary bg-opacity-20 relative overflow-hidden">
+<img src="https://static.readdy.ai/image/188f311e24fc2226deb6a17aad7a6c69/3e919f52eabf5e264a8b86c4acfac5f2.jpeg"
+class="absolute inset-0 w-full h-full object-cover" alt="Night Sky Illustration">
+</div>
+</div>
+</main>
+<div id="about" class="hidden w-full px-20">
+<div class="grid grid-cols-2 gap-8">
+<div class="glass p-8 rounded-lg">
+<h2 class="text-3xl font-bold mb-6 neon-text text-left">About Me</h2>
+<p class="mb-6 text-left">
+I am a fresh graduate with a strong foundation in web development technologies.
+My passion lies in creating beautiful, functional, and user-friendly websites.
+</p>
+<div class="mb-6">
+<h3 class="text-xl font-semibold mb-3 text-left">Technical Skills</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="glass p-4 rounded-lg">
+<h4 class="font-medium mb-2">Frontend</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 text-sm rounded-full glass">HTML5</span>
+<span class="px-3 py-1 text-sm rounded-full glass">CSS3</span>
+<span class="px-3 py-1 text-sm rounded-full glass">JavaScript</span>
+<span class="px-3 py-1 text-sm rounded-full glass">React</span>
+
+</div>
+</div>
+<div class="glass p-4 rounded-lg">
+<h4 class="font-medium mb-2">Backend</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 text-sm rounded-full glass">Java</span>
+<span class="px-3 py-1 text-sm rounded-full glass">PL/SQL</span>
+<span class="px-3 py-1 text-sm rounded-full glass">SQL</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<h3 class="text-xl font-semibold mb-3 text-left">Education</h3>
+<div class="glass p-4 rounded-lg">
+<div class="mb-4">
+<h4 class="font-medium">Bachelor of Technology in Mechanical</h4>
+<p class="text-sm opacity-80">Sagi Rama Krishnam Raju Engineering College,Bhimavaram</p>
+<p class="text-sm opacity-80">2020 - 2024</p>
+<p class="text-sm">CGPA: 7.27/10</p>
+</div>
+<div>
+<h4 class="font-medium">Higher Secondary Education</h4>
+<p class="text-sm opacity-80">Board of Intermediate Education Andhra Pradesh</p>
+<p class="text-sm opacity-80">2018 - 2020</p>
+<p class="text-sm">Percentage: 92%</p>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<div class="glass p-8 rounded-lg">
+<h3 class="text-xl font-semibold mb-4 text-left">Contact Information</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center glass rounded-full">
+<i class="ri-mail-line"></i>
+</div>
+<div>
+<p class="text-sm opacity-80">Email</p>
+<p>devisriram29@gmail.com</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center glass rounded-full">
+<i class="ri-phone-line"></i>
+</div>
+<div>
+<p class="text-sm opacity-80">Phone</p>
+<p>+91 9908998958</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center glass rounded-full">
+<i class="ri-map-pin-line"></i>
+</div>
+<div>
+<p class="text-sm opacity-80">Location</p>
+<p>Hyderabad,Telangana, India</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full aspect-square rounded-lg bg-primary bg-opacity-20 relative overflow-hidden">
+<img src="https://static.readdy.ai/image/188f311e24fc2226deb6a17aad7a6c69/3e919f52eabf5e264a8b86c4acfac5f2.jpeg"
+class="absolute inset-0 w-full h-full object-cover" alt="Night Sky Illustration">
+</div>
+</div>
+</div>
+</div>
+<div id="skills" class="hidden w-full px-20">
+<div class="glass p-8 rounded-lg">
+<h2 class="text-3xl font-bold mb-6 neon-text">Technical Skills</h2>
+<div class="grid grid-cols-2 gap-8">
+<div class="glass p-6 rounded-lg">
+<h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center">
+<span>HTML5/CSS3</span>
+<div class="w-48 h-2 bg-white bg-opacity-20 rounded-full">
+<div class="w-[90%] h-full bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<span>JavaScript</span>
+<div class="w-48 h-2 bg-white bg-opacity-20 rounded-full">
+<div class="w-[85%] h-full bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<span>React</span>
+<div class="w-48 h-2 bg-white bg-opacity-20 rounded-full">
+<div class="w-[80%] h-full bg-primary rounded-full"></div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="glass p-6 rounded-lg">
+<h3 class="text-xl font-semibold mb-4">Backend Development</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center">
+
+</div>
+<div class="flex justify-between items-center">
+    <span>JAVA</span>
+    <div class="w-48 h-2 bg-white bg-opacity-20 rounded-full">
+    <div class="w-[80%] h-full bg-primary rounded-full"></div>
+    </div>
+</div>
+<div class="flex justify-between items-center">
+<span>SQL</span>
+<div class="w-48 h-2 bg-white bg-opacity-20 rounded-full">
+<div class="w-[70%] h-full bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<span>PL/SQLSQL</span>
+<div class="w-48 h-2 bg-white bg-opacity-20 rounded-full">
+<div class="w-[65%] h-full bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-6 mt-8">
+<div class="glass p-6 rounded-lg text-center">
+<div class="w-16 h-16 flex items-center justify-center glass rounded-full mx-auto mb-4">
+<i class="ri-code-line text-3xl"></i>
+</div>
+<h4 class="font-semibold mb-2">Clean Code</h4>
+<p class="text-sm opacity-80">Writing maintainable and efficient code</p>
+</div>
+<div class="glass p-6 rounded-lg text-center">
+<div class="w-16 h-16 flex items-center justify-center glass rounded-full mx-auto mb-4">
+<i class="ri-responsive-line text-3xl"></i>
+</div>
+<h4 class="font-semibold mb-2">Responsive Design</h4>
+<p class="text-sm opacity-80">Creating mobile-friendly interfaces</p>
+</div>
+<div class="glass p-6 rounded-lg text-center">
+<div class="w-16 h-16 flex items-center justify-center glass rounded-full mx-auto mb-4">
+<i class="ri-tools-line text-3xl"></i>
+</div>
+<h4 class="font-semibold mb-2">Problem Solving</h4>
+<p class="text-sm opacity-80">Finding efficient solutions to challenges</p>
+</div>
+</div>
+</div>
+</div>
+<div id="contact" class="hidden w-full px-20">
+<div class="grid grid-cols-2 gap-8">
+<div class="glass p-8 rounded-lg">
+<h2 class="text-3xl font-bold mb-6 neon-text">Get in Touch</h2>
+<form class="space-y-6">
+<div>
+<label class="block text-sm mb-2">Name</label>
+<input type="text" class="w-full bg-white bg-opacity-10 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary" required>
+</div>
+<div>
+<label class="block text-sm mb-2">Email</label>
+<input type="email" class="w-full bg-white bg-opacity-10 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary" required>
+</div>
+<div>
+<label class="block text-sm mb-2">Message</label>
+<textarea class="w-full bg-white bg-opacity-10 rounded-lg p-3 h-32 focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+</div>
+<button type="submit" class="bg-primary hover:bg-opacity-80 px-8 py-3 rounded-button w-full">Send Message</button>
+</form>
+</div>
+<div class="space-y-8">
+<div class="glass p-8 rounded-lg">
+<h3 class="text-xl font-semibold mb-6">Quick Contact</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 cursor-pointer hover:text-primary transition-colors" onclick="copyToClipboard('devisriram29@gmail.com')">
+<div class="w-10 h-10 flex items-center justify-center glass rounded-full">
+<i class="ri-mail-line"></i>
+</div>
+<div>
+<p class="text-sm opacity-80">Email</p>
+<p>devisriram29@gmail.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4 cursor-pointer hover:text-primary transition-colors" onclick="copyToClipboard('+91 9876543210')">
+<div class="w-10 h-10 flex items-center justify-center glass rounded-full">
+<i class="ri-phone-line"></i>
+</div>
+<div>
+<p class="text-sm opacity-80">Phone</p>
+<p>+91 9908998958</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 flex items-center justify-center glass rounded-full">
+<i class="ri-map-pin-line"></i>
+</div>
+<div>
+<p class="text-sm opacity-80">Location</p>
+<p>Hyderabad,Telangana, India</p>
+</div>
+</div>
+</div>
+</div>
+<div class="glass p-8 rounded-lg">
+<h3 class="text-xl font-semibold mb-6">Social Links</h3>
+<div class="flex gap-4">
+<a href="https://linkedin.com" target="_blank" class="w-12 h-12 flex items-center justify-center glass rounded-full hover:text-primary transition-colors">
+<i class="ri-linkedin-line text-xl"></i>
+</a>
+<a href="https://github.com" target="_blank" class="w-12 h-12 flex items-center justify-center glass rounded-full hover:text-primary transition-colors">
+<i class="ri-github-line text-xl"></i>
+</a>
+<a href="https://twitter.com" target="_blank" class="w-12 h-12 flex items-center justify-center glass rounded-full hover:text-primary transition-colors">
+<i class="ri-twitter-line text-xl"></i>
+</a>
+<a href="https://instagram.com" target="_blank" class="w-12 h-12 flex items-center justify-center glass rounded-full hover:text-primary transition-colors">
+<i class="ri-instagram-line text-xl"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="glass rounded-lg p-4 mt-4">
+<div class="flex justify-center items-center space-x-6">
+<a href="mailto:devisriram29@gmail.com" class="hover:text-primary transition-colors duration-300">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-mail-line text-xl"></i>
+</div>
+</a>
+<a href="https://linkedin.com" target="_blank" class="hover:text-primary transition-colors duration-300">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-linkedin-line text-xl"></i>
+</div>
+</a>
+<a href="https://github.com" target="_blank" class="hover:text-primary transition-colors duration-300">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-github-line text-xl"></i>
+</div>
+</a>
+<a href="https://instagram.com" target="_blank" class="hover:text-primary transition-colors duration-300">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-instagram-line text-xl"></i>
+</div>
+</a>
+</div>
+</footer>
+</div>
+<script>
+function showSection(sectionId) {
+document.getElementById('home').classList.add('hidden');
+document.getElementById('about').classList.add('hidden');
+document.getElementById('skills').classList.add('hidden');
+document.getElementById('contact').classList.add('hidden');
+document.getElementById(sectionId).classList.remove('hidden');
+}
+const textToType = "Web Developer | Fresher";
+let i = 0;
+const typingSpeed = 100;
+function typeText() {
+if (i < textToType.length) {
+document.getElementById("typed-text").textContent += textToType.charAt(i);
+i++;
+setTimeout(typeText, typingSpeed);
+}
+}
+function copyToClipboard(text) {
+navigator.clipboard.writeText(text).then(() => {
+const tooltip = document.createElement('div');
+tooltip.className = 'fixed bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-lg';
+tooltip.textContent = 'Copied to clipboard!';
+document.body.appendChild(tooltip);
+setTimeout(() => tooltip.remove(), 2000);
+});
+}
+window.onload = typeText;
+</script>
+</body>
+</html>
